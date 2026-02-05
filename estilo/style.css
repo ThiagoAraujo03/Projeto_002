@@ -1,0 +1,380 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&family=Kaushan+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor0: #E1EFF9;
+    --cor1: #77B5E4;
+    --cor2: #2986CC;
+    --cor3: #184E77;
+    --cor4: #071622;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--font-padrao)
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    min-height: 150px;
+    text-align: center;
+    padding: 40px;
+}
+
+header > h1 {
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.250);
+}
+
+header > p {
+    font-family: var(--font-padrao);
+    color: white;
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.250);
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgb(0, 0, 0, 0.250);
+}
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5;
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor4);
+}
+
+main {
+padding: 20px;
+min-width: 300px;
+max-width: 800px;
+margin: auto;
+margin-bottom: 30px;
+}
+
+main h1 {
+    color: var(--cor3);
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    font-size: 2em;
+    text-align: center;
+}
+
+main h2 {
+    font-family: var(--font-destaque);
+    color: var(--cor2);
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+main img {
+    width: 100%;
+}
+
+div.caixa {
+    display: flex;
+    gap: 20px;
+    margin: 10px;
+}
+
+div.mvv {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.500);
+    border-radius: 10px;
+}
+
+div.mvv h2 {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+div.mvv p {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+div.mvv > ul {
+    list-style-position: inside;
+    padding: 30px;
+}
+
+div.mvv strong {
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+div.produto {
+    background-color: black;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+div.produto > h1 {
+    color: white;
+}
+
+div.caixa2 {
+    background-color: rgb(30, 30, 30);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.441);
+    border-radius: 10px;
+    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+div.caixa2 > h1 {
+    color: green;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+div.caixa2 > h3 {
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    padding: 3px;
+}
+
+div.caixa2 > p {
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+div.caixa2 > p.manual {
+    text-align: center;
+    color: white;
+}
+
+div.caixa3 {
+    background-color: white;
+    border-radius: 10px;
+    margin: 40px;
+    padding-bottom: 10px;
+}
+
+div.caixa3 > h3 {
+    padding: 20px;
+    color: green;
+    text-align: center;
+    font-weight: normal;
+}
+
+div.caixa3 > p {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+div.caixa4 {
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
+    margin: 40px;
+    padding-bottom: 10px;
+}
+
+div.caixa4 h3 {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div.caixa4 > p {
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 0.9em;
+}
+
+img.produto {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.simulador {
+    background-color: #96E2B6;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+.simulador > h2 {
+    margin-top: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.simulador > .barra {
+    margin: auto;
+    background-color: var(--cor0);
+    width: 500px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.botao > a {
+    color: white;
+    background-color: #008d75;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5;
+}
+
+.simulador > .botao {
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.botao :hover{
+    background-color: #006D5B;
+}
+
+.quadrado {
+    padding-top: 50px;
+    box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.500);
+    display: inline-block;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 250px;
+    height: 280px;
+}
+
+#q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10 {
+    margin: auto;
+    background-color: lightgray;
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 2px solid var(--cor3);
+    border-radius: 50px;
+    width: 125px;
+    height: 125px;
+}
+
+#q1 {
+    background-image: url(desenvolvedores/ary.jpg);
+}
+
+#q2 {
+    background-image: url(desenvolvedores/gabriel.jpg);
+}
+
+#q3 {
+    background-image: url(desenvolvedores/hugo.jpg);
+    background-size: 160px;
+}
+
+#q4 {
+    background-image: url(desenvolvedores/julia.jpg);
+}
+
+#q5 {
+    background-image: url(desenvolvedores/julio.jpg);
+}
+
+#q6 {
+    background-image: url(desenvolvedores/kamily.jpg);
+}
+
+#q7 {
+    background-image: url(desenvolvedores/matheus.jpg);
+}
+
+#q8 {
+    background-image: url(desenvolvedores/raphael.jpg);
+}
+
+#q9 {
+    background-image: url(desenvolvedores/thiago.jpg);
+}
+
+#q10 {
+    background-image: url(desenvolvedores/vinicius.jpg);
+}
+
+.quadrado > p {
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+    color: rgb(0, 0, 142);
+    font-weight: bold;
+}
+
+.contato {
+    background-image: url(img-formulario.png);
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.contato > h1 {
+    padding-top: 180px;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: var(--cor3);
+    padding: 20px;
+}
